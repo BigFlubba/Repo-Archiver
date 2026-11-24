@@ -23,7 +23,7 @@ timeout /t 1 >nul
 echo:
 echo ------------------------------------------------------------------------------
 echo:
-echo Repos updated!
+echo Repo(s) updated!
 echo:
 echo Exiting ...
 timeout /t 1 >nul
