@@ -33,7 +33,7 @@ Brings existing clones up to date.
 
 ## Anatomy of a repo section
 
-Each repo is handled by a small, self-contained section of six lines. This is the block you copy when you want to add another repo (see [Adding multiple repos](configuration.md#adding-multiple-repos)).
+Each repo is handled by a small, self-contained section of six lines. This is the block you copy when you want to add another repo (see [Adding multiple repos](CONFIGURATION.md#adding-multiple-repos)).
 
 **In `repo_cloner.bat`:**
 

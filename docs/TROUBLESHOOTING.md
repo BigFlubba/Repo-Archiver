@@ -26,7 +26,11 @@ The URL is wrong, or the repo is private, and you aren't signed in to Git. Check
 
 ## Repos are on another drive, and Git runs in the wrong folder
 
-You need `/D` on the `cd` commands. See [Using a different drive](configuration.md#using-a-different-drive).
+You need `/D` on the `cd` commands. See [Using a different drive](CONFIGURATION.md#using-a-different-drive).
+
+## A scheduled task runs but my repos don't update
+
+Task Scheduler can report success even when `git pull` failed, because the script's last command is a `timeout`. Log the output to see what Git said. See [Checking that it worked](SCHEDULING.md#checking-that-it-worked).
 
 ## The window closes before I can read the output
 

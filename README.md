@@ -14,9 +14,15 @@ Handy for archiving projects you don't want to lose, or for keeping a set of rep
 
 ## Quick start
 
-1. **Download the scripts.** Grab `repo_cloner.bat` and `repo_updater.bat` from the [`scripts/`](scripts/) folder.
+1. **Clone this repo** so you get the scripts and all of the docs. Open Command Prompt in the folder where you want to keep it and run:
 
-2. **Edit `repo_cloner.bat`** in a text editor (Notepad is fine) and replace the placeholders:
+   ```bat
+   git clone https://github.com/BigFlubba/Repo-Archiver.git
+   ```
+
+   The scripts are in the `scripts` folder of the clone.
+
+2. **Edit `scripts\repo_cloner.bat`** in a text editor (Notepad is fine) and replace the placeholders:
 
    | Find | Replace with | Example |
    | --- | --- | --- |
@@ -38,13 +44,13 @@ Handy for archiving projects you don't want to lose, or for keeping a set of rep
 
 3. **Run `repo_cloner.bat`** by double-clicking it. Your repo is cloned to `C:\Users\<you>\Desktop\GitRepos\<repo>`.
 
-4. **Edit `repo_updater.bat`** the same way (`YOUR_USER` and `REPO_NAME`). Make sure its path points at the folder the cloner created, which is inside `GitRepos`:
+4. **Edit `scripts\repo_updater.bat`** the same way (`YOUR_USER` and `REPO_NAME`). Make sure its path points at the folder the cloner created, which is inside `GitRepos`:
 
    ```bat
    cd C:\Users\Alex\Desktop\GitRepos\Repo-Archiver && git pull
    ```
 
-5. **Run `repo_updater.bat`** whenever you want to pull the latest changes.
+5. **Run `repo_updater.bat`** whenever you want to pull the latest changes, or [schedule it to run automatically](docs/SCHEDULING.md).
 
 > Not sure what your user folder is called? Open `C:\Users\` in File Explorer. It's the folder with your name on it.
 
@@ -52,14 +58,16 @@ Handy for archiving projects you don't want to lose, or for keeping a set of rep
 
 | Guide | What's in it |
 | --- | --- |
-| [Scripts overview](docs/scripts.md) | What each script does, line by line |
-| [Configuration](docs/configuration.md) | Placeholders, running on a different drive (`cd /D`), and adding multiple repos |
-| [Troubleshooting](docs/troubleshooting.md) | Common errors and fixes |
+| [Scripts overview](docs/SCRIPTS.md) | What each script does, line by line |
+| [Configuration](docs/CONFIGURATION.md) | Placeholders, running on a different drive (`cd /D`), and adding multiple repos |
+| [Scheduling](docs/SCHEDULING.md) | Running the updater automatically with Windows Task Scheduler |
+| [Troubleshooting](docs/TROUBLESHOOTING.md) | Common errors and fixes |
 
 ## Common tasks
 
-- **Archive more than one repo?** See [Adding multiple repos](docs/configuration.md#adding-multiple-repos).
-- **Repos live on a drive other than `C:`?** See [Using a different drive](docs/configuration.md#using-a-different-drive).
+- **Archive more than one repo?** See [Adding multiple repos](docs/CONFIGURATION.md#adding-multiple-repos).
+- **Repos live on a drive other than `C:`?** See [Using a different drive](docs/CONFIGURATION.md#using-a-different-drive).
+- **Want updates to run on their own?** See [Scheduling with Task Scheduler](docs/SCHEDULING.md).
 
 ## License
 
