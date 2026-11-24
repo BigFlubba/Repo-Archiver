@@ -87,6 +87,7 @@ Open **Task Scheduler**, select **Task Scheduler Library**, and find your task. 
 
 ## Things to keep in mind
 
+- **Using a copy of the scripts?** Point the task at the copy you edited (see the tip in the [Quick start](../README.md#quick-start)), not the original in your clone.
 - **Moved the scripts?** The task points at a fixed path. If you move or rename the repo folder, edit the task's action to match.
 - **Repos on another drive?** Nothing changes in Task Scheduler, but the `cd` lines in the script need `/D`. See [Using a different drive](CONFIGURATION.md#using-a-different-drive).
 - **Added more repos?** The scheduled task runs the whole script, so every repo section you've added to `repo_updater.bat` gets updated. See [Adding multiple repos](CONFIGURATION.md#adding-multiple-repos).

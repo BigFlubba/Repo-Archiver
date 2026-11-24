@@ -22,7 +22,9 @@ Handy for archiving projects you don't want to lose, or for keeping a set of rep
 
    The scripts are in the `scripts` folder of the clone.
 
-2. **Edit `scripts\repo_cloner.bat`** in a text editor (Notepad is fine) and replace the placeholders:
+   > **Tip:** Edit a copy of the scripts, not the originals. If you change the files inside your clone, a later `git pull` of Repo-Archiver can fail with a "local changes would be overwritten" error whenever the scripts are updated upstream. Copy the `scripts` folder somewhere else (for example `C:\Users\Alex\Documents\RepoArchiverScripts`) and edit the copies in that folder instead.
+
+2. **Edit `repo_cloner.bat`** (in your copy of the scripts) in a text editor (Notepad is fine) and replace the placeholders:
 
    | Find | Replace with | Example |
    | --- | --- | --- |
@@ -44,7 +46,7 @@ Handy for archiving projects you don't want to lose, or for keeping a set of rep
 
 3. **Run `repo_cloner.bat`** by double-clicking it. Your repo is cloned to `C:\Users\<you>\Desktop\GitRepos\<repo>`.
 
-4. **Edit `scripts\repo_updater.bat`** the same way (`YOUR_USER` and `REPO_NAME`). Make sure its path points at the folder the cloner created, which is inside `GitRepos`:
+4. **Edit `repo_updater.bat`** (in your copy) the same way (`YOUR_USER` and `REPO_NAME`). Make sure its path points at the folder the cloner created, which is inside `GitRepos`:
 
    ```bat
    cd C:\Users\Alex\Desktop\GitRepos\Repo-Archiver && git pull
